@@ -15,6 +15,7 @@ import { BlogEntryComponent } from './module/blog-entry/blog-entry/blog-entry.co
 import { AboutUsComponent } from './module/about-us/about-us/about-us.component';
 import {HeaderComponent} from './module/core/header/header.component';
 import {FooterComponent} from './module/core/footer/footer.component';
+import {CarouselComponent} from './module/home/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import {FooterComponent} from './module/core/footer/footer.component';
     BlogEntryComponent,
     AboutUsComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CarouselComponent
     
     
    
