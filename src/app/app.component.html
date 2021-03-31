@@ -1,0 +1,81 @@
+<h1>Angular Tutorial</h1>
+
+
+<button (click)="myEvent()">Click me</button>
+<br> <br>
+<input type="text" #box (keyup)="myEvent()" />
+<br> <br>
+<input type="text" (keyup)="getVal()"/>
+<h2>{{currentVal}}</h2>
+<h1>normal heasding</h1>
+<h2 appCustomeStyle>custom heading</h2>
+
+
+
+<!--<h1 *ngIf= "show=='yes' then ifBlock else elseBlock">If Block</h1>
+<ng-template #ifBlock>
+  <h1>if Block</h1>
+</ng-template>
+<ng-template #elseBlock>
+  <h1>else Block</h1>
+</ng-template>-->
+<ng-template [ngIf]="show1=='red'">
+  <h1>Red Block</h1>
+</ng-template>
+<ng-template [ngIf]="show1=='green'">
+  <h1>Green Block</h1>
+</ng-template>
+<ng-template [ngIf]="show1=='blue'">
+  <h1>Blue Block</h1>
+</ng-template>
+<div [ngSwitch]="color">
+  <h1 style="color:red;" *ngSwitchCase="'red'">
+    red color
+  </h1>
+  <h1 style="color:blue;" *ngSwitchCase="'blue'">
+    blue color
+  </h1>
+  <h1 style="color:green;" *ngSwitchCase="'green'">
+    blue color
+  </h1>
+</div>
+<div *ngFor ="let items of data">
+  {{items}}
+</div>
+<div *ngFor ="let items of data_object">
+  {{items.name}}
+  {{items.age}}
+</div>
+<table border="1">
+  <tr>
+    <td>Name</td>
+    <td>Age</td>
+    <td>Email</td>
+  </tr>
+  <tr *ngFor="let items of data_object">
+    <td>{{items.name}}</td>
+    <td>{{items.age}}</td>
+    <td>{{items.email}}</td>
+  </tr>
+</table>
+<form #simpleForm="ngForm" (ngSubmit)="getUserDetail(simpleForm.value)" >
+  <input type="text" ngModel name="username" placeholder="enter name"> <br><br>
+  <input type="text" ngModel name="age" placeholder="enter age"> <br><br>
+  <input type="text" ngModel name="address" placeholder="enter address"> <br><br>
+  <input type="text" ngModel name="password" placeholder="enter password"> <br><br>
+  <button>Get user detail</button>
+</form>
+<div class="btn-group btn-group-toggle">
+  <label class="btn-primary" ngbButtonLabel>
+    <input type="checkbox" ngbButton [(ngModel)]="model.left"> Left (pre-checked)
+  </label>
+  <label class="btn-primary" ngbButtonLabel>
+    <input type="checkbox" ngbButton [(ngModel)]="model.middle"> Middle
+  </label>
+  <label class="btn-primary" ngbButtonLabel>
+    <input type="checkbox" ngbButton [(ngModel)]="model.right"> Right
+  </label>
+</div>
+<hr>
+<button mat-button color="primary">angular</button>
+<button mat-raised-button color="warn">Warn</button>
