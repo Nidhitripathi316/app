@@ -1,0 +1,38 @@
+p{
+    font-size: 15px;
+    font-weight: 400;
+    color: #7a7a7a;
+    line-height: 30px;
+    margin-top:35px;
+    text-align: center;
+}
+.brief-descpt2{
+    width:600px;
+    margin-left: 650px;
+    margin-top:-220px;
+}
+.brief-descpt4{
+    width:400px;
+    margin-top: -250px;
+    margin-left:500px ;
+}
+.brief-descpt5{
+    width:400px;
+    margin-top:-250px;
+    margin-left:900px;
+}
+.brief-descpt7{
+    width:300px;
+    margin-top:-250px;
+    margin-left:370px;
+}
+.brief-descpt8{
+    width:310px;
+    margin-top:-250px;
+    margin-left:660px;
+}
+.brief-descpt9{
+    width:300px;
+    margin-top:-250px;
+    margin-left:960px;
+}

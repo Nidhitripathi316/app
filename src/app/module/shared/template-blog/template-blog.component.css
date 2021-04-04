@@ -1,0 +1,23 @@
+.template-blog .container{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:40px;
+    background-image: url(https://templatemo.com/templates/templatemo_551_stand_blog/assets/images/cta-bg.jpg);
+}
+
+.download-btn a {
+        display: inline-block;
+        background-color: #f48840;
+        color: #fff;
+        font-size: 13px;
+        font-weight: 500;
+        padding: 12px 20px;
+        text-transform: uppercase;
+        transition: all .3s;
+        margin-left:900px;
+    }
+    a{
+        text-decoration: none;
+    }
+

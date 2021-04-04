@@ -1,0 +1,15 @@
+.viewpost a{
+    display: inline-block;
+    background-color: #f48840;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    height: 60px;
+    line-height: 60px;
+    padding: 0px;
+    width: 770px;
+    text-align: center;
+    margin-top:70px;
+    margin-left:-134px;
+}

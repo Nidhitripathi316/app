@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TagCloudsComponent } from './tag-clouds.component';
+import { BlogPostsComponent } from './blog-posts.component';
 
-describe('TagCloudsComponent', () => {
-  let component: TagCloudsComponent;
-  let fixture: ComponentFixture<TagCloudsComponent>;
+describe('BlogPostsComponent', () => {
+  let component: BlogPostsComponent;
+  let fixture: ComponentFixture<BlogPostsComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TagCloudsComponent ]
+      declarations: [ BlogPostsComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(TagCloudsComponent);
+    fixture = TestBed.createComponent(BlogPostsComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

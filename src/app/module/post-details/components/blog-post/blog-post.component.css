@@ -1,15 +1,9 @@
-.post{
-    margin-left:-160px;
-    margin-top:100px;
-    
-}
-.down-content{
-    padding: 40px;
-    border-right: 1px solid #eee;
-    border-left: 1px solid #eee;
-    border-bottom: 1px solid #eee;
-    width:770px;
-    height:67vh;
+.content-down{
+    border-left:1px solid #eee;
+    border-right:1px solid #eee;
+    border-bottom:1px solid #eee;
+    height:95vh;
+    padding:40px;
 }
 a {
     text-decoration: none;
