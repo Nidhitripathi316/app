@@ -9,3 +9,51 @@
     transition: all .3s;
     margin-left:110px;
 }
+.form-content1{
+    text-transform: uppercase;
+    border:1px solid #eee;
+    border-radius: 0.5px;
+    text-align: left;
+    margin-top:10px;
+    margin-left:110px;
+    padding:10px;
+    width:330px;
+    height:50px;
+    font-size: 12px;
+}
+.form-content2{
+    text-transform: uppercase;
+    border:1px solid #eee;
+    border-radius: 0.5px;
+    text-align: left;
+    margin-top:10px;
+    margin-left:35px;
+    padding:10px;
+    width:330px;
+    height:50px;
+    font-size: 12px;
+}
+.form-content3{
+    text-transform: uppercase;
+    border:1px solid #eee;
+    border-radius: 0.5px;
+    text-align: left;
+    margin-top:10px;
+    margin-left:110px;
+    padding:10px;
+    width:695px;
+    height:50px;
+    font-size: 12px;
+} 
+.form-content4{
+    text-transform: uppercase;
+    border:1px solid #eee;
+    border-radius: 0.5px;
+    text-align: left;
+    margin-top:10px;
+    margin-left:110px;
+    padding:10px;
+    width:695px;
+    height:200px;
+    font-size: 12px;
+}

@@ -24,4 +24,12 @@ li {
    display: flex;
 
 }
+.header{
+    position:fixed;
+    z-index: 999;
+}
+.container{
+    position:relative;
+    z-index:99999;
+}
 

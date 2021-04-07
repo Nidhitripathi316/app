@@ -1,86 +1,51 @@
-<div class="blog-posts grid-cols-2">
+<div class="grid-cols-2 blog-posts">
     
-    <div class="blog-img ">
-        <img src={{image1}}>
+    <div class="blog-img">
+        <ng-content select=".blogs-image"></ng-content>
     </div>
      <div class ="container1">
-        <span class="uppercase font-bold text-md  ml-10 text-red-500">Lifestyle</span>
+        <span class="ml-10 font-bold text-red-500 uppercase text-md">Lifestyle</span>
         <a  class="text-black no-underline "href="https://templatemo.com/templates/templatemo_551_stand_blog/post-details.html">
-            <h6 class="ml-10 mt-2 font-bold  tracking-wide text-xl">{{authorname1}}</h6>
+            <h6>
+                <ng-content select=".titlename"></ng-content>
+            </h6>
             </a>
             <ul class="post-info">
                 <li class="list">
                     <a class="text-sm" href="#">Admin</a>
-                    <div class="h-4 w-0.5 -mt-5 ml-24 -mr-14 bg-gray-300"></div>
+                    <div class="h-4 w-0.5 -mt-5 ml-24 mr-2 bg-gray-300"></div>
                 </li>
                 <li  class="list">
-                    <a class="text-sm" href="#">{{date1}}</a>
-                    <div class="h-4 w-0.5 -mt-5 ml-36 -mr-8 bg-gray-300"></div>
+                    <a class="text-sm" href="#">
+                        <ng-content select=.date></ng-content>
+                    </a>
+                    <div class="h-4 w-0.5 -mt-5 ml-24 mr-2 bg-gray-300"></div>
                 </li>
                 <li  class="list">
-                    <a class="text-sm" href="#">{{comment1}}</a>
+                    <a class="text-sm" href="#">
+                        <ng-content select=.comment></ng-content>
+                    </a>
                 </li>
             </ul>
-            <hr class=" mt-4 w-10/12 ml-10">
-            <p class="text-left ml-10 -px-2">Nullam nibh mi, tincidunt sed sapien ut,
+            <hr class="w-10/12 mt-4 ml-10 ">
+            <p class="ml-10 text-left -px-2">Nullam nibh mi, tincidunt sed sapien ut,
                 rutrum hendrerit velit. Integer auctor a
                 mauris sit amet eleifend.</p>
-            <hr class=" mt-4 w-10/12 ml-10">
+            <hr class="w-10/12 mt-4 ml-10 ">
             
-            <div class="post-options mt-2 ml-10">
+            <div class="mt-2 ml-10 post-options">
                 <ul class="post-tags ">
                   <li class="inline-block">
-                      <i></i>
+                    <i class="text-red-500 fas fa-tags "></i>
                   </li>
                   <li class="inline-block">
-                      <a class="text-gray-400 text-sm" href="#">Best Template,</a>
+                      <a class="ml-1 text-sm text-gray-400" href="#">Best Template,</a>
                   </li>
                   <li class="inline-block ml-1">
-                    <a class="text-gray-400 text-sm" href="#">TemplateMo</a>
+                    <a class="text-sm text-gray-400" href="#">TemplateMo</a>
                 </li>
                 </ul>
         </div>
     </div> 
-    <div class="blog-img2">
-        <img src={{image2}}>
-    </div>
-     <div class ="container2">
-        <span class="uppercase font-bold text-md  ml-10 text-red-500">Lifestyle</span>
-        <a  class="text-black no-underline "href="https://templatemo.com/templates/templatemo_551_stand_blog/post-details.html">
-            <h6 class="ml-10 mt-2 font-bold  tracking-wide text-xl">{{authorname2}}</h6>
-            </a>
-            <ul class="post-info">
-                <li class="list">
-                    <a class="text-sm" href="#">Admin</a>
-                    <div class="h-4 w-0.5 -mt-5 ml-24 -mr-14 bg-gray-300"></div>
-                </li>
-                <li  class="list">
-                    <a class="text-sm" href="#">{{date2}}</a>
-                    <div class="h-4 w-0.5 -mt-5 ml-36 -mr-8 bg-gray-300"></div>
-                </li>
-                <li  class="list">
-                    <a class="text-sm" href="#">{{comment2}}</a>
-                </li>
-            </ul>
-            <hr class=" mt-4 w-10/12 ml-10">
-            <p class="text-left ml-10 -px-2">Nullam nibh mi, tincidunt sed sapien ut,
-                rutrum hendrerit velit. Integer auctor a
-                mauris sit amet eleifend.</p>
-            <hr class=" mt-4 w-10/12 ml-10">
-            
-            <div class="post-options mt-2 ml-10">
-                <ul class="post-tags ">
-                  <li class="inline-block">
-                      <i></i>
-                  </li>
-                  <li class="inline-block">
-                      <a class="text-gray-400 text-sm" href="#">Best Template,</a>
-                  </li>
-                  <li class="inline-block ml-1">
-                    <a class="text-gray-400 text-sm" href="#">TemplateMo</a>
-                </li>
-                </ul>
-        </div>
-    </div> 
-
+   
 </div>

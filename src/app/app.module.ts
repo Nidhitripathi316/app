@@ -30,6 +30,7 @@ import { BlogPostComponent } from './module/post-details/components/blog-post/bl
 import { CommentComponent } from './module/post-details/components/comment/comment.component';
 import { YourCommentComponent } from './module/post-details/components/your-comment/your-comment.component';
 import { BlogPostsComponent } from './module/blog-entries/components/blog-posts/blog-posts.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -65,6 +66,8 @@ import { BlogPostsComponent } from './module/blog-entries/components/blog-posts/
     MatButtonModule,
     FormsModule,
     NgbModule,
+    HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

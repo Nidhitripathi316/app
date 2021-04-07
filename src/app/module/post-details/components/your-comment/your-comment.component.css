@@ -1,7 +1,7 @@
 .line{
     margin-left:-20px;
     margin-top:10px;
-    width:670px;
+    width:650px;
 }
 .sendmsg-btn  {
     display: inline-block;
@@ -13,4 +13,52 @@
     text-transform: uppercase;
     transition: all .3s;
     margin-left:-22px;
+}
+.form-content1{
+    text-transform: uppercase;
+    border:1px solid #eee;
+    border-radius: 0.5px;
+    text-align: left;
+    margin-top:10px;
+    margin-left:-20px;
+    padding:10px;
+    width:310px;
+    height:50px;
+    font-size: 12px;
+}
+.form-content2{
+    text-transform: uppercase;
+    border:1px solid #eee;
+    border-radius: 0.5px;
+    text-align: left;
+    margin-top:10px;
+    margin-left:30px;
+    padding:10px;
+    width:310px;
+    height:50px;
+    font-size: 12px;
+}
+ .form-content3{
+    text-transform: uppercase;
+    border:1px solid #eee;
+    border-radius: 0.5px;
+    text-align: left;
+    margin-top:10px;
+    margin-left:-20px;
+    padding:10px;
+    width:650px;
+    height:50px;
+    font-size: 12px;
+} 
+.form-content4{
+    text-transform: uppercase;
+    border:1px solid #eee;
+    border-radius: 0.5px;
+    text-align: left;
+    margin-top:10px;
+    margin-left:-20px;
+    padding:10px;
+    width:650px;
+    height:200px;
+    font-size: 12px;
 }

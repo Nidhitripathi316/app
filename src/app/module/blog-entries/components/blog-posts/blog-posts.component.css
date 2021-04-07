@@ -1,28 +1,23 @@
  .container1{
     border: 1px solid #eee;
-    width:370px;
+    width:358px;
     height:60vh;
     margin-left:15px;
     padding-top:40px;  
 } 
  .container2{
     border: 1px solid #eee;
-    width:370px;
+    width:358x;
     height:60vh;
     margin-left:410px;
     margin-top:-660px;
     padding-top:40px;  
 } 
 .blog-img{
-    margin-top:100px;
+    margin-top:80px;
     margin-left:15px;  
 }
-.blog-img2{
-    margin-top:-734px;
-    margin-left:410px;
-    height:1000px;
-    width:400px;
-}
+
 a {
     text-decoration: none;
 }
