@@ -1,4 +1,4 @@
-import { Component,Input, OnInit } from '@angular/core';
+import { Component,Input,Output,EventEmitter, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-post',
@@ -16,10 +16,14 @@ export class PostComponent implements OnInit {
   // @Input() para1_remain:string="";
   // @Input() tage1a:string="";
   // @Input() tage1b:string="";
-
+  @Input()  indexelement:any;
+  @Output() parentFunction= new EventEmitter<any>();
+  
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  deleteData(selected:any){
+    this.parentFunction.emit(this.indexelement)
+    }
 }

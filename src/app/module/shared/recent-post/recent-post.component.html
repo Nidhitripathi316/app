@@ -1,80 +1,82 @@
-<div class="recent-post ">
+<div class="recent-post">
     <div class="search-post ">
         <form class="search-btn">
-            <input class="input-txt uppercase" type="text" placeholder="Type to Seacrch...">
+            <input class="uppercase input-txt" name="recentcontent" type="text" [(ngModel)]="recentcontent" (ngModelChange)="Search()" placeholder="Type to Seacrch...">
         </form>
     </div>
-    <div class="recent-posts ">
-        <h6 class="uppercase text-black border-b leading-2 pb-3 text-md font-bold tracking-wider  ">RECENT POSTS</h6>
-    <ul>
+    <div class="recent-posts">
+        <h6 class="pb-3 font-bold tracking-wider text-black uppercase border-b leading-2 text-md ">RECENT POSTS</h6>
+    <div  *ngFor ="let item of data">
+        <ul>
         <li>
-            <a class=" text-black mt-3 text-lg leading-2 pb-3 font-bold tracking-wider  " href="https://templatemo.com/templates/templatemo_551_stand_blog/post-details.html">Vestibulum id turpis porttitor sapien facilisis scelerisque
-            <p class="  border-b mt-2 pb-3 text-sm text-gray-400">May 31, 2020</p>
+            <a class="pb-3 mt-3 text-lg font-bold tracking-wider text-black leading-2" href="https://templatemo.com/templates/templatemo_551_stand_blog/post-details.html">{{item.recentcontent}}
+            <p class="pb-3 mt-2 text-sm text-gray-400 border-b ">{{item.recentDate}}</p>
+            </a>
+        </li>
+        <!-- <li>
+            <a class="pb-3 mt-3 text-lg font-bold tracking-wider text-black leading-2" href="https://templatemo.com/templates/templatemo_551_stand_blog/post-details.html">{{item4.content[1]}}
+            <p class="pb-3 mt-2 text-sm text-gray-400 border-b ">{{item4.date[1]}}</p> 
             </a>
         </li>
         <li>
-            <a class=" text-black mt-3 text-lg leading-2 pb-3 font-bold tracking-wider  " href="https://templatemo.com/templates/templatemo_551_stand_blog/post-details.html">Suspendisse et metus nec libero ultrices varius eget in risus
-            <p class="  border-b mt-2 pb-3 text-sm text-gray-400">May 28, 2020</p> 
-            </a>
-        </li>
-        <li>
-            <a class=" text-black mt-3 text-lg leading-2 pb-3 font-bold tracking-wider  " href="https://templatemo.com/templates/templatemo_551_stand_blog/post-details.html">Swag hella echo park leggings, shaman cornhole ethical coloring
-            <p class="  border-b mt-2 pb-3 text-sm text-gray-400">May 14, 2020</p>
+            <a class="pb-3 mt-3 text-lg font-bold tracking-wider text-black leading-2" href="https://templatemo.com/templates/templatemo_551_stand_blog/post-details.html">{{item4.content[2]}}
+            <p class="pb-3 mt-2 text-sm text-gray-400 border-b ">{{item4.date[2]}}</p>
     </a>
-        </li>
+        </li> -->
     </ul>
+</div>
     </div>
     <div class="category ">
-        <h6 class="uppercase text-black border-b leading-2 pb-3 text-md font-bold tracking-wider  ">CATEGORIES</h6>
+        <h6 class="pb-3 font-bold tracking-wider text-black uppercase border-b leading-2 text-md ">CATEGORIES</h6>
         <div class="category-content">
          <ul>
              <li class="mt-4">
-                <a class="text-black font-semibold tracking-wide  text-md" href="#">- Nature Lifestyle</a>
+                <a class="font-semibold tracking-wide text-black text-md" href="#">- Nature Lifestyle</a>
              </li>
              <li class="mt-3">
-                <a class="text-black font-semibold tracking-wide text-md" href="#">- Awesome Layouts</a>
+                <a class="font-semibold tracking-wide text-black text-md" href="#">- Awesome Layouts</a>
             </li>
             <li class="mt-3">
-                <a class="text-black font-semibold tracking-wide text-md" href="#">- Creative Ideas
+                <a class="font-semibold tracking-wide text-black text-md" href="#">- Creative Ideas
                    </a>
             </li>
             <li class="mt-3">
-                <a class="text-black font-semibold tracking-wide text-md" href="#"> 
+                <a class="font-semibold tracking-wide text-black text-md" href="#"> 
                     - Responsive Templates</a> 
             </li>
             <li class="mt-3">
-                <a class="text-black font-semibold tracking-wide text-md" href="#">- HTML5 / CSS3 Templates</a>
+                <a class="font-semibold tracking-wide text-black text-md" href="#">- HTML5 / CSS3 Templates</a>
             </li>
             <li class="mt-3">
-                <a class="text-black font-semibold tracking-wide text-md" href="#">- Creative & Unique</a>
+                <a class="font-semibold tracking-wide text-black text-md" href="#">- Creative & Unique</a>
             </li>
          </ul>
         </div>
     </div>
     <div class="tag-cloud">
-        <h6 class="uppercase text-black border-b leading-2 pb-3 text-md font-bold tracking-wider  ">TAG CLOUDS</h6>
+        <h6 class="pb-3 font-bold tracking-wider text-black uppercase border-b leading-2 text-md ">TAG CLOUDS</h6>
         <div class="category-content2">
          <ul>
              <li class="mt-8">
-                 <a class="px-6 py-3 hover:bg-red-500 hover:text-white border text-gray-400 font-semibold text-sm " href="#">Lifestyle</a>
+                 <a class="px-6 py-3 text-sm font-semibold text-gray-400 border hover:bg-red-500 hover:text-white " href="#">Lifestyle</a>
               </li>
               <li class="-mt-6 ml-28">
-                <a class="px-6 py-3  hover:bg-red-500 hover:text-white border text-gray-400 font-semibold text-sm " href="#">Creative</a>
+                <a class="px-6 py-3 text-sm font-semibold text-gray-400 border hover:bg-red-500 hover:text-white " href="#">Creative</a>
              </li>
-             <li class="-mt-6 ml-56">
-                <a class="px-6 py-3  hover:bg-red-500 hover:text-white border text-gray-400 font-semibold text-sm " href="#">HTML 5</a>
+             <li class="ml-56 -mt-6">
+                <a class="px-6 py-3 text-sm font-semibold text-gray-400 border hover:bg-red-500 hover:text-white " href="#">HTML 5</a>
              </li>
              <li class="mt-9 ">
-                <a class="px-6 py-3  hover:bg-red-500 hover:text-white border text-gray-400 font-semibold text-sm " href="#">Inspiration</a>
+                <a class="px-6 py-3 text-sm font-semibold text-gray-400 border hover:bg-red-500 hover:text-white " href="#">Inspiration</a>
              </li>
-             <li class="-mt-6 ml-32 ">
-                <a class="px-6 py-3  hover:bg-red-500 hover:text-white border text-gray-400 font-semibold text-sm " href="#">Motivation</a>
+             <li class="ml-32 -mt-6 ">
+                <a class="px-6 py-3 text-sm font-semibold text-gray-400 border hover:bg-red-500 hover:text-white " href="#">Motivation</a>
              </li>
-             <li class="-mt-6 ml-64 ">
-                <a class="px-4 py-3  hover:bg-red-500 hover:text-white border text-gray-400 font-semibold text-sm " href="#">PSD</a>
+             <li class="ml-64 -mt-6 ">
+                <a class="px-4 py-3 text-sm font-semibold text-gray-400 border hover:bg-red-500 hover:text-white " href="#">PSD</a>
              </li>
              <li class="mt-10">
-                <a class="px-6 py-3  hover:bg-red-500 hover:text-white border text-gray-400 font-semibold text-sm " href="#">Responsive</a>
+                <a class="px-6 py-3 text-sm font-semibold text-gray-400 border hover:bg-red-500 hover:text-white " href="#">Responsive</a>
              </li>
          </ul>
         </div>

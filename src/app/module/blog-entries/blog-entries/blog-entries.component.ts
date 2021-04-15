@@ -6,7 +6,11 @@ import { DataService } from 'src/app/data.service';
   styleUrls: ['./blog-entries.component.css']
 })
 export class BlogEntryComponent implements OnInit {
-  data2: any[] | undefined;
+  data2: any[] = [];
+  // data3:any;
+  parentFunction(indexelement:any){
+    this.data2.splice(indexelement,1)
+   }
   constructor(private user2:DataService) { }
 
   ngOnInit(): void {
@@ -16,3 +20,5 @@ export class BlogEntryComponent implements OnInit {
   })
   }
 }
+
+

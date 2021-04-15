@@ -7,7 +7,10 @@ import { DataService } from 'src/app/data.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  data: any[] | undefined;
+  data: any[] = [];
+  parentFunction(indexelement:any){
+    this.data.splice(indexelement,1)
+   }
   constructor(private user:DataService) { }
   
   ngOnInit(): void {

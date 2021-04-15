@@ -3,10 +3,13 @@
 <div class="flex justify-start flex-shrink-0 mx-24 space-x-3">
   <div class="inline-block">
     <div class="grid grid-cols-2">
-    <app-blog-posts  *ngFor= "let item2 of data2">
-      
+    <app-blog-posts  *ngFor= "let item2 of data2; let i= index" [indexelement]='i' (parentFunction)="parentFunction($event)">
+     
       <div class="blogs-image">
         <img src="{{item2.image}}" alt="img">
+      </div>
+      <div class="title">
+        <h6>{{item2.title}}</h6>
       </div>
       <div class="titlename">
         <h6 class="mt-2 ml-10 text-xl font-bold tracking-wide">{{item2.subTitle}}</h6>
@@ -17,8 +20,27 @@
       <div class="comment">
         <a>{{item2.comment}} Comments</a>
       </div>
-    
+      <div class="author">
+        <a>{{item2.author}}</a>
+      </div>
+      <div class="paragraph">
+        <a>{{item2.content}}</a>
+      </div>
+      <div class="tag1">
+        <a>{{item2.tags[0]}}</a>
+      </div>
+      <div class="tag2">
+        <a>{{item2.tags[1]}}</a>
+      </div>
+
+      <div class="delete-btn">
+      <button  class="font-semibold text-center uppercase text-md">delete post</button>
+      </div> 
+
     </app-blog-posts>
+   
+
+    
   </div>
     <div class="pagenumber">
       <ul class="pages">
